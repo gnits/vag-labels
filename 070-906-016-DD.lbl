@@ -1,0 +1,16 @@
+;
+; VAG-COM Labelfile
+;
+; VW Touareg (7L)
+;
+; Component: Engine (#01) 
+;
+; P/N: 070-906-016-DD  (R5 BPD)
+;
+; Measuring Blocks 
+;
+; Created on 06/Jan/2019 by Gnits (gnits.car@gmail.com)
+; Last Modified on 12/Jan/2019
+;
+;
+REDIRECT,070-906-016-DE.LBL,070-906-016-DD
