@@ -1,0 +1,423 @@
+;
+; VAG-COM Labelfile
+;
+; VW Touareg (7L)
+;
+; Component: Engine (#01) 
+;
+; P/N: 070-906-016-DE  (R5 BPE)
+;
+; Measuring Blocks 
+;
+; Created on 06/Jan/2019 by Gnits (gnits.car@gmail.com)
+; Last Modified on 17/Jan/2019
+;
+;
+;---------------------------------------------------
+;
+; Measuring Block Information
+;
+;---------------------------------------------------
+;
+;
+001,0,Injection Quantity
+001,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+001,2,Injection Quantity,,Specification (Idle): 3.0...9.0 mg/Str.
+001,3,Injection Duration,(specified),Specification (Idle): 5.5...9.0 °KW
+001,4,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Warm): 75.0...110.0 °C
+;
+002,0,Idle Speed
+002,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+002,2,Accel. Pedal Pos.,Sensor (G79),Range: 0.0...100.0 %\nSpecification (Idle): 0.0 %\nSpecification (Full Load): 99.0...100.0 %
+002,3,Operation Status,,xxxxxxx1 = Climate Control ON\nxxxx1xxx = Idle Switch closed\nxxx1xxxx = Kick-Down (only Automatic Transmission)\nx1xxxxxx = Idle Speed raised
+002,4,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Warm): 75.0...110.0 °C
+;
+003,0,Air Intake && Exhaust Gas Recirculation (EGR)
+003,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+003,2,Intake Air Mass,(spec.),Specification (Idle): 250.0...350.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+003,3,Intake Air Mass,(actual) (G70),Specification (Idle): 230.0...370.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+003,4,Exhaust Gas,Recirc. Duty Cycle,Specification (Idle): 15.0...80.0 %\nSpecification (Full Load): 0.0 %
+B003,0,Exhaust Gas Recirculation (EGR)
+B003,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Basic Setting): 1450...1550 RPM
+B003,2,Intake Air Mass,(spec.),Specification (Idle): 250.0...350.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+B003,3,Intake Air Mass,(actual) (G70),Specification (EGR inactive): 440.0...530.0 mg/Str.\nSpecification (EGR active): 180.0...390.0 mg/Str.\nDifference (EGR active/inactive): 130.0...270.0 mg/Str.
+B003,4,Exhaust Gas,Recirc. Duty Cycle,Specification (EGR inactive): 0.0 %\nSpecification (EGR active): min. 20.0 %
+B003,11,Prerequisites: Ignition ON / Engine ON (Running)
+B003,12,After activation of the Basic Setting make sure to not touch the Throttle Pedal!
+B003,13,Exhaust Gas Recirculation (EGR) is alternately switched ON and OFF.
+B003,14,The process takes about a minute, and will stop after a few cycles.
+B003,15,The Deviation between "EGR ON" and "EGR OFF" must at least be 100.0 mg/Str.
+;
+004,0,Unit Injector
+004,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+004,2,Injection Start,(specified),Specification (Idle): -1.5 °BTDC ... 6.5 °BTDC
+004,3,Injection Duration,(specified),Specification (Idle): 5.5...9.0 °KW
+004,4,Torsion Value,,Specification: -9.0...+9.0 °KW
+;
+005,0,Start Conditions (last Engine Start)
+005,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+005,2,Injection Quantity,Starting,Specification: 9.0...30.0 mg/Str.
+005,3,Start,Synchronisation,001 = Self-Synchronisation Camshaft active\n002 = Self-Synchronisation Crankshaft active\n004 = Engine running\n008 = Engine Synchronisation validated\n016 = Engine Synchronisation completed successfully\n032 = Self-Synchronisation Camshaft Sensor successful\n064 = Self-Synchronisation Crankshaft Sensor successful\n128 = First valid Cog/Tooth detected\n\nInterim Values are the Sum of the Individual Values
+005,4,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Warm): 75.0...110.0 °C
+;
+006,0,Cruise Control System (CCS)
+006,1,Vehicle Speed,(actual),Specification: 0...191 km/h
+006,2,Cruise Control,Pedal Monitoring,xxxxxxx1 = Brake Light Switch operated\nxxxxxx1x = Brake Pedal Switch operated\nxxxxx1xx = Clutch Pedal Switch operated\nxxxx1xxx = CCS enabled\nxxx1xxxx = ACC enabled\nxx1xxxxx = Main Switch\n00xxxxxx = ACC/CCS Mode not active\n10xxxxxx = Status override\n01xxxxxx = ACC/GRA active\n11xxxxxx = ACC blocked
+006,3,Accel. Pedal Pos.,Sensor (G79),Range: 0.0...100.0 %\nSpecification (Idle): 0.0 %\nSpecification (Full Load): 99.0...100.0 %
+006,4,Cruise Control,Switch Monitoring,xxxxxxx1 = Stuck ON\nxxxxxx1x = Pressed OFF\nxxxxx1xx = Decelerate (-)\nxxxx1xxx = Accelerate (+)\nxxx1xxxx = Set (SET)\nxx1xxxxx = Resume (RESET)\n1xxxxxxx = Stuck ON (Hardware)
+;
+007,0,Temperatures
+007,1,Fuel Temperature,(G81),Range: 20...90 °C\nSpecification (Cold): ca. Ambient Temperature
+007,2,Fuel Cooler,Load,Specification: 0...100 %
+007,3,Intake Air,Temperature (G72),Range: 20...100 °C\nSpecification (Cold): ca. Ambient Temperature
+007,4,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Cold): ca. Ambient Temperature
+;
+008,0,Injection Quantity Limitation I (Torque Limitation)
+008,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+008,2,Torque Requested,(Driver),Specification (Idle): -4.0...0.0 Nm
+008,3,Torque Limitation,,Specification (Idle): 190.0...215.0 Nm
+008,4,Smoke Limitation,,Specification (Idle): 100.0...170.0 Nm
+;
+009,0,Injection Quantity Limitation II (Torque Limitation)
+009,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+009,2,Torque Requested,(Cruise Ctrl),Specification: min -3264.0 Nm
+009,3,Torque Limitation,(Transmission),Specification (Idle): 400.0...500.0 Nm
+009,4,Torque Restriction,,Specification (Idle): 100.0...170.0 Nm
+;
+010,0,Charge Pressure Control
+010,1,Mass Air Flow,(actual),Specification (Idle): 230.0...370.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+010,2,Ambient Air,Pressure,Specification: 900.0...1100.0 mbar
+010,3,Boost Pressure,(actual) (G31),Specification (Idle): 900.0...1150.0 mbar\nSpecification (Full Load): 2000.0...2650.0 mbar
+010,4,Accel. Pedal Pos.,Sensor (G79),Range: 0.0...100.0 %\nSpecification (Idle): 0.0 %\nSpecification (Full Load): 99.0...100.0 %
+;
+011,0,Charge Pressure Control
+011,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+011,2,Boost Pressure,(specified),Specification (Idle): 900.0...1150.0 mbar\nSpecification (Full Load): 2000.0...2650.0 mbar
+011,3,Boost Pressure,(actual) (G31),Specification (Idle): 900.0...1150.0 mbar\nSpecification (Full Load): 2000.0...2650.0 mbar
+011,4,Charge Pressure,Duty Cycle (N75),Specification (Idle): 40.0...90.0 %
+B011,0,Charge Pressure Control
+B011,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Basic Setting): min. 1350 RPM
+B011,2,Charge Pressure,Control Status,Range: ON/OFF
+B011,3,Boost Pressure,(actual),Deviation (active/inactive): 80.0...250.0 mbar
+B011,4,Charge Pressure,Duty Cycle (N75),Specification (Control inactive): 0.0...10.0 %\nSpecification (Control active): 90.0...100.0 %
+B011,11,Prerequisites: Ignition ON / Engine ON (Running)
+B011,12,After activation of the Basic Setting make sure to not touch the Throttle Pedal!
+B011,13,Charge Pressure will be be automatically cycled between no boost and maximum boost.
+B011,14,The process takes about 2 minutes, and will stop after a few cycles.
+B011,15,The Deviation between min. and max. boost pressure must be at least 80.0 mbar, 
+B011,16,but will be ideally around 200 mbar.
+;
+012,0,Glow Plugs
+012,1,Glow Status,,00000000 = Waiting for Coolant Temperature\n00000001 = Waiting for ECO Start Request\n00010000 = Pre-Glow\n01010000 = No Pre-Glow\n10110000 = Post-Glow\n11000000 = No Post-Glow\n11110000 = Interim Glow\n00110000 = Readiness Glowing\n01110000 = Glow Start\n10110001 = Waiting for Post-Glow\n11010000 = No Post-Glow\n11110001 = Waiting for Interim Glow\n11111111 = Glowing OFF
+012,2,Pre-Glow Period,,Specification: 0...2 s
+012,3,Supply Voltage,(Terminal 30),Specification: 13.0...15.0 V
+012,4,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Warm): 75.0...110.0 °C
+;
+013,0,Idle Stabilization (Injection Quantity Deviation - Cylinders 1-4)
+013,1,Inj. Quant. Dev.,Cylinder 1,Specification (Idle): -2.8...+2.8 mg/Str.
+013,2,Inj. Quant. Dev.,Cylinder 2,Specification (Idle): -2.8...+2.8 mg/Str.
+013,3,Inj. Quant. Dev.,Cylinder 3,Specification (Idle): -2.8...+2.8 mg/Str.
+013,4,Inj. Quant. Dev.,Cylinder 4,Specification (Idle): -2.8...+2.8 mg/Str.
+;
+014,0,Idle Stabilization (Injection Quantity Deviation - Cylinder 5)
+014,1,Inj. Quant. Dev.,Cylinder 5,Specification (Idle): -2.8...+2.8 mg/Str.
+;
+015,0,Fuel Consumption
+015,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+015,2,Engine Torque,,Specification (Idle): 30.0...90.0 Nm
+015,3,Fuel Consumption,(actual),Range: 0.0...100.0 l/h\nSpecification (Idle): 0.5...2.0 l/h
+015,4,Torque Requested,(driver),Specification (Idle): -4.0...0.0 Nm
+;
+016,0,Generator
+016,1,Generator Load,,Specification: 5.0...95.0 %
+016,4,Supply Voltage,(Terminal 30),Range: 0.0...20.0 V\nSpecification: 12.5...15.0 V
+;
+017,0,Readiness (EOBD)
+017,1,EOBD/CARB,Mode 01 DATA A,x---0000 = No Fault Codes stored\n0---xxxx = MIL OFF\n1---xxxx = MIL ON
+017,2,EOBD/CARB,Mode 01 DATA B,-xxx-xx1 = Activation Misfire Recognition OIN\n-xxx-x1x = Activation Fuel Supply System ON\n-xxx-1xx = Activation Comprehensive Components ON\n-xxx-xxx = EOBD-Test Misfire Recognition finished \n-x0x-xxx = EOBD-Test Fuel Supply System finished\n-0xx-xxx = EOBD-Test Comprehensive Components finished
+017,3,EOBD/CARB,Mode 01 DATA C,xx1----- = Activation Oxygen/Lambda Sensor ON\nx1x----- = Activation Oxygen/Lambda Sensor Heating ON\n1xx----- = Activation Exhaust Gas Recirculation (EGR) ON
+017,4,EOBD/CARB,Mode 01 DATA D,xx0----- = EOBD-Test Oxygen/Lambda Sensor finished\nx0x----- = EOBD-Test Oxygen/Lambda Sensor Heating finished\n0xx----- = EOBD-Test Exhaust Gas Recirculation (EGR) finished
+;
+018,0,Injector Status (Cylinders 1-4)
+018,1,Injector Status,Cylinder 1, 000 = No Faults detected\n002 = Control while Starting\n004 = Small Injection Quantity or Injector faulty\n008 = Energy Limits/Maximum Current reached\n016 = Begin of Injection Period (BIP) out of Specification\n032 = Samples too low\n064 = Conversion Error\n128 = Begin of Injection Period (BIP) not plausible
+018,2,Injector Status,Cylinder 2, 000 = No Faults detected\n002 = Control while Starting\n004 = Small Injection Quantity or Injector faulty\n008 = Energy Limits/Maximum Current reached\n016 = Begin of Injection Period (BIP) out of Specification\n032 = Samples too low\n064 = Conversion Error\n128 = Begin of Injection Period (BIP) not plausible
+018,3,Injector Status,Cylinder 3, 000 = No Faults detected\n002 = Control while Starting\n004 = Small Injection Quantity or Injector faulty\n008 = Energy Limits/Maximum Current reached\n016 = Begin of Injection Period (BIP) out of Specification\n032 = Samples too low\n064 = Conversion Error\n128 = Begin of Injection Period (BIP) not plausible
+018,4,Injector Status,Cylinder 4, 000 = No Faults detected\n002 = Control while Starting\n004 = Small Injection Quantity or Injector faulty\n008 = Energy Limits/Maximum Current reached\n016 = Begin of Injection Period (BIP) out of Specification\n032 = Samples too low\n064 = Conversion Error\n128 = Begin of Injection Period (BIP) not plausible
+;
+019,0,Injector Status (Cylinder 5)
+019,1,Injector Status,Cylinder 5, 000 = No Faults detected\n002 = Control while Starting\n004 = Small Injection Quantity or Injector faulty\n008 = Energy Limits/Maximum Current reached\n016 = Begin of Injection Period (BIP) out of Specification\n032 = Samples too low\n064 = Conversion Error\n128 = Begin of Injection Period (BIP) not plausible
+;
+020,0,Injection Quantity Limitation (from ABS)
+020,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+020,2,Engine Torque
+020,3,ASR Limitation
+020,4,MSR Limitation 
+;
+021,0,CAN-Databus Status
+021,1,Engine Electronics 
+021,2,Transmission Electronics
+021,3,Brake Electronics 
+021,4,Brake Electronics (ESP)
+;
+022,0,Shut-off Status
+022,1,Cruise Control,Shut-off Reason
+022,2,Switch Monitoring,Cruise Ctrl
+022,3,Charge Pressure,Shut-off Status
+022,4,Climate Control,Shut-off Reason,0 = Compressor ON\n1 = Compressor OFF: Refrigerant Pressure too High (> 32 bar)\n2 = Compressor OFF: Blower faulty\n3 = Compressor OFF: Refrigerant Pressure too Low (< 2.0 bar)\n5 = Compressor OFF: Engine OFF or NO RPM\n6 = Compressor OFF: ECON Mode OR NO Basic Setting\n7 = Compressor OFF: System deactivated (by Driver) via OFF/0 Switch\n8 = Compressor OFF: Ambient Temperature too Low  (> 3 °C)\n10 = Compressor OFF: Supply Voltage too Low  (> 10.1 V)\n11 = Compressor OFF: Engine Temperature too High (> 118 °C)\n12 = Compressor OFF: Requested by Engine Control Module\n13 = Compressor OFF: Supply Voltage too High (> 17 V)\n14 = Compressor OFF: Evaporator Temperature too Low\n16 = Compressor OFF: Compressor Activation Malfunction\n17 = Compressor OFF: Pressure Sensor Signal implausible\n18 = Compressor OFF: Engine Speed too High at Standstill\n19 = Compressor OFF: Requested by Central Electronics\n20 = Compressor OFF: Refrigerant Loss\n23 = Compressor OFF: Coolant Fan Signal missing
+;
+023,0,Unit Injector Switching Time Deviation (Cylinders 1-4)
+023,1,Switch Time Deviat.,Cylinder 1,Specification: -100.0...+100.0 ms
+023,2,Switch Time Deviat.,Cylinder 2,Specification: -100.0...+100.0 ms
+023,3,Switch Time Deviat.,Cylinder 3,Specification: -100.0...+100.0 ms
+023,4,Switch Time Deviat.,Cylinder 4,Specification: -100.0...+100.0 ms
+;
+024,0,Unit Injector Switching Time Deviation (Cylinder 5)
+024,1,Switch Time Deviat.,Cylinder 5,Specification: -100.0...+100.0 ms
+;
+025,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+;025,3,??
+;025,4,??
+;
+027,0,Speed Limiter / Cruise Control
+027,1,Cruise Control,Status
+027,2,Adaptive Cruise,Ctrl Status
+027,3,Vehicle Speed
+027,4,Vehicle Speed,Limit,Specification (if set): 80...190 km/h
+;
+028,0,Accelerator Pedal,Position Sensor
+028,1,Accel. Pedal Pos.,Voltage (G79),0 % = 0.60...0.91 V\n100 % = 4.10...4.70 V
+028,3,Operation Status,,xxxxxxx1 = Climate Control ON\nxxxx1xxx = Idle Switch closed\nxxx1xxxx = Kick-Down (only Automatic Transmission)\nx1xxxxxx = Idle Speed raised
+028,4,Accel. Pedal Pos.,Sensor (G79),Range: 0.0...100.0 %\nSpecification (Idle): 0.0 %\nSpecification (Full Load): 99.0...100.0 %
+;
+029,0,Engine Oil Temperature and Level Sensor (G266)
+029,1,Oil,Temp. (G266),Range: 20...+120 °C\nSpecification (Warm): 80.0...110.0 °C
+029,2,Oil,Level
+029,3,Oil,Wear Index
+029,4,Oil,Soot Index
+;
+030,0,Lambda/Oxygen Control
+030,2,Lambda Voltage,Signal Offset ; O2
+030,3,Lambda Probe,Oxygen Conc. ?
+030,4,Lambda Probe,Control Trim ?
+;
+031,0,Lambda/Oxygen Control
+031,4,Lambda Control,Voltage (G39?)
+;
+032,0,Lambda/Oxygen Control
+;032,1,??
+032,2,Ambient Air,Temperature
+032,3,Ambient Air,Pressure,Specification: 900.0...1100.0 mbar
+032,4,Lambda Control,Voltage (G39?)
+;
+033,2,Temp. before,Turbocharger (G235)
+;
+039,1,Engine Speed
+039,2,Injection Quantity
+039,3,Injection Quantity
+;
+040,0,Lambda/Oxygen Control
+040,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+040,2,Injection Quantity,Specification (Idle): 3...10 mg/Str.
+040,3,Status,Sensor Heating,xxxxxx01 = Lambda/Oxygen Sensor Heating not OR only with reduced Output active\nxxxxxx10 = Lambda/Oxygen Sensor Heating enabled
+040,4,Lambda/Oxygen,Sensor Value,Range: 1.000...2.0000\n\nValues above 1.38 often imply\nCarbonization of the PPD/PD Unit Injector.
+;
+041,0,Exhaust Gas Recirculation && Variable Intake Manifold
+041,1,Position (spec.),Intake Flap
+041,2,Position (spec.),EGR-Actuator
+041,3,Position (act.),EGR-Actuator
+041,4,Exhaust Gas,Recirc. Duty Cycle,Specification (Idle): 15.0...80.0 %\nSpecification (Full Load): 0.0 %
+;
+042,0,Exhaust Gas Recirculation && Variable Intake Manifold II
+042,1,EGR Valve,Learned Value (closed)
+042,2,EGR Adaptation,Status,0000000 - ???\n11111111 - ???
+042,3,Intake Manifold,Flap Position (act.),? Specification: 90...98%
+042,4,EGR Valve,Flap Pos.,?? Specification: 15...65%
+;
+044,0,Variable Intake Manifold && Exhaust Gas Recirculation Cooler II
+044,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+044,2,Mass Air Flow,(actual),Specification (Idle): 230.0...370.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+044,3,Exhaust Gas,Recirc. Cooler,0 = active\n1 = not active
+044,4,Intake Manifold,Flap Duty Cycle
+;
+046,0,Variable Intake Manifold Flap I
+046,1,Intake Manifold,Flap Position (spec.),? Specification (Idle): 90...98%
+046,2,Intake Manifold,Flap Pos. Control
+046,3,Intake Manifold,Flap Position (act.),? Specification (Idle): 90...98%
+046,4,Intake Manifold,Flap Duty Cycle
+;
+047,0,Variable Intake Manifold Flap II
+047,1,Int. Man. Flap,Learned Value (closed),? Specification: 0.4...0.6
+047,2,Int. Man. Flap,Learned Value (open)
+047,3,Intake Manifold,Flap Duty Cycle
+047,4,Intake Manifold,Flap Position (act.),? Specification (Idle): 90...98%
+;
+051,0,Engine Speed Recognition
+051,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+051,2,Camshaft Speed,,Specification: Engine Speed/2 = ±50 RPM/min
+051,3,Start,Synchronization,001 = Self-Synchronisation Camshaft active\n002 = Self-Synchronisation Crankshaft active\n004 = Engine running\n008 = Engine Synchronisation validated\n016 = Engine Synchronisation completed successfully\n032 = Self-Synchronisation Camshaft Sensor successful\n064 = Self-Synchronisation Crankshaft Sensor successful\n128 = First valid Cog/Tooth detected\n\nInterim Values are the Sum of the Individual Values
+051,4,Inject. Sequence,Shut-Off Status
+;
+052,0,? Cylinder Speed (Cylinders 1-4) ?
+052,1,Cylinder 1
+052,2,Cylinder 2 
+052,3,Cylinder 3
+052,4,Cylinder 4 
+;
+053,0,? Cylinder Speed (Cylinder 5) ?
+053,1,Cylinder 5
+;
+062,0,Engine Cooling (Temperatures)
+062,1,Coolant Temp.,Engine Outlet,Specification: min. 75.0 °C
+062,2,Coolant Temp.,Cooler Outlet,Specification: min. 75.0 °C
+062,3,Ambient,Temperature,Specification: -30.0...+50.0 °C
+062,4,Intake Air,Temperature (G42),Specification: 5.0...80.0 °C
+;
+063,0,Climate Control
+063,1,Refrigerant,Pressure (G65),Specification (A/C OFF): 0.00...8.00 bar\nSpecification (A/C ON): 5.00...30.00 bar
+063,2,Compressor,Load Torque,Specification (A/C OFF): 0 Nm\nSpecification (A/C ON): 2...10 Nm
+063,3,Cooling,Requirement,? 000 = A/C on\n111 = A/C off ?
+063,4,A/C Compressor,Shut-Off Reason,001 = Launch Condition\n002 = Shut-Off: Launch Condition\n004 = Acceleration Condition\n008 = Shut-Off: Acceleration Condition\n016 = Shut-Off: Start Condition\n032 = System Malfunction recognized\n064 = Shut-Off: System Malfunction recognized\n128 = Shut-Off: Idle Speed too Low
+;
+064,0,Engine Cooling (Climate Control)
+064,1,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Warm): 75.0...110.0 °C
+064,2,Coolant Temp.,Cooler Outlet,Specification: min. 75.0 °C
+064,3,Coolant Fan 1,Duty Cycle,Specification (Coolant Fan ON): 10.0...100.0 %
+064,4,Coolant Fan 2,Duty Cycle,Specification (Coolant Fan ON): 10.0...100.0 %
+;
+066,0,Fuel Temperature
+;
+067,0,Particle Filter (Exhaust Gas I)
+067,1,Temp. before,Turbocharger (G235),Specification (10 s after Start of Regeneration): min. 690.0 °C
+067,2,Temp. in,Particle Filter,Specification (30 s after Start of Regeneration): min. 400.0 °C\nSignal Type: Model/Calculated
+067,3,Press. Difference,Particle Filter,Specification (Idle/DPF cleaned): 3.0...7.0 mbar\nSpecification (Partial Load/DPF cleaned): 30.0...70.0 mbar\nSpecification (Full Load/DPF cleaned): max. 300.0 mbar
+067,4,Press. Difference,Offset (DPF),Range: -100.0...+100.0 mbar\nSpecification (after adaptation): -25.0...+25.0 mbar
+;
+068,0,Particle Filter
+068,1,Load Coefficient,(Soot Volume %),Specification: 15...90.0 %\n\nAbove 15.0 % the Automatic Regeneration while Driving will Start.\nAbove 90.0 % a Regeneration is NOT permitted - Fire Hazard!
+068,2,Carbon Mass,(Ash Load),Specification: 0...150 g (95g?)
+068,3,Carbon Mass,Learned Value
+;
+069,0,Particle Filter Regeneration
+069,1,Regeneration,Status 1 (Fault),xxxxxxx1 = Regeneration interrupted (due to Overrun OR Torque Request OR High Vehicle Speed)
+069,2,Regeneration,Status 2 (Stage),xxx1xxxx = Standard Mode\nxxx1xxx1 = Regeneration Stage 1\nxx1xxxx1 = Regeneration Stage 2\nx1xxxxx1 = Regeneration Stage 3
+069,3,Regeneration,Status 3
+069,4,Regeneration,Status 4 (Type),xxxxxxx1 = Normal thermal Regeneration\nxxxxxx1x = Enhanced thermal Regeneration
+;
+070,0,Particle Filter
+070,1,Regeneration,Status 4 (Type),xxxxxxx1 = Normal thermal Regeneration\nxxxxxx1x = Enhanced thermal Regeneration
+070,2,Regeneration,Time (Total),Since last successful Regeneration
+070,3,Failed,Regenerations,Specifications: max. 4
+070,4,Successful,Regenerations
+;
+071,0,Particle Filter (Post-Injection)
+071,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+071,2,Injection Quantity,(Post-Injection),Specification (During Regeneration): min. 10.0 mg/Str.
+071,3,Injection Start,(Post-Injection)
+071,4,Injection Duration,(Post-Injection)
+;
+073,0,Particle Filter Regen.
+073,1,Total Fuel Cons.,Since Last Regen.
+073,2,Total Distance,Since Last Regen.
+073,3,Time Elapsed,Since Last Regen.
+073,4,Particle Filter,Load Coefficient,Specification: 15...40.0 %\n\nAbove 15.0 % the Automatic Regeneration while Driving will Start.\nAbove 40.0 % a Regeneration is NOT permitted - Fire Hazard!
+;
+074,0,Particle Filter (Exhaust Gas III)
+074,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+074,2,Temperature bef.,Turbo Charger,Specification (10 s after Start of Regeneration): min. 690.0 °C
+074,3,Lambda/Oxygen,Sensor Value,Range: 1.000...2.5000\n\nValues above 1.38 often imply\nCarbonization of the PPD/PD Unit Injector.
+074,4,Injection Quantity,Offset
+;
+075,0,Particle Filter (Exhaust Gas IV)
+075,1,Temp. before,Turbocharger (G235),Specification: min. 100 °C
+075,2,Temp. before,Part. Filter (G448),Specification: min. 100 °C  
+075,3,Particle Filter,Load Coefficient,Specification: 15...40.0 %\n\nAbove 15.0 % the Automatic Regeneration while Driving will Start.\nAbove 40.0 % a Regeneration is NOT permitted - Fire Hazard!
+075,4,Temp. after,Part. Filter (G527),Specification: min. 100 °C 
+;
+080,0,Advanced Control Module Identification I
+080,1,Identification
+;
+081,0,Advanced Control Module Identification II
+081,1,Vehicle Ident.,Number (VIN)
+;
+082,0,Advanced Control Module Identification III
+082,1,Flash Tool Code
+082,2,Flash Data
+082,3,Facility ID
+082,4,Software Version
+;
+086,0,EOBD
+;
+087,0,EOBD
+;
+090,0,EOBD/ODB-2 EGR
+090,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+090,2,Injection Quantity,,Specification (Idle): 3.0...9.0 mg/Str.
+090,3,Intake Air Mass,(spec.),Specification (Idle): 250.0...350.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+090,4,Status,Control Deviation
+;
+091,0,EOBD/OBD-2 Exhaust Gas Recirculation (EGR) II
+091,1,Positive,Control Deviation,Permissible positive EGR control deviation
+091,2,Negative,Control Deviation,Permissible negative EGR control deviation
+091,3,Intake Air Mass,(spec.),Specification (Idle): 250.0...350.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+091,4,Control Deviation,? Specification: -20...20%
+;
+093,1,? Press.+Temp+Speed,Status,
+093,2,? Press.+Temp+Speed,Ratio,
+093,3,Intake Air Mass,Average,Specification: -20...20 mg/Str.
+093,4,Intake Air Mass,Average Calc.?,Specification: -20...20 mg/Str.
+;
+094,1,Temp. before,Turbocharger (G235),Specification: min. 100 °C
+;094,2,?? Exhaust Temp ?
+094,3,Temp. before,Part. Filter (G448),Specification: min. 100 °C
+;094,4,?? Exhaust Temp ?
+;
+095,1,Temp. before,Part. Filter (G448),Specification: min. 100 °C
+;
+097,1,Press. Difference,Offset (DPF)
+;
+;117 ? Non-resettable mileage flags ?
+;
+125,0,CAN-Databus Communication (Powertrain)
+125,1,Transmission,,Range: Transm. 1/Transm. 0
+125,2,Brake Electronics,,(J104),Range: ABS 1/ABS 0\nSpecification: ABS 1
+125,3,Instrument Cluster,(J285),Range: Instruments 1/Instruments 0\nSpecification: Instruments 1
+125,4,Airbag,(J234),Range: Airbag 1/Airbag 0\nSpecification: Airbag 1
+;
+126,0,CAN-Databus Communication (Powertrain)
+126,1,Climate Control,(J255),Range: A/C 1/A/C 0
+;
+127,0,CAN Status
+127,1,AWD,CAN Status
+127,3,Ignition Lock,CAN Status
+127,4,Steering Wheel,CAN Status
+;
+128,0,CAN Status
+128,1,CAN Gateway,CAN Status
+128,2,Battery Regulation,CAN Status
+128,4,Park Assist,CAN Status
+;
+131,1,Climate Control,Shut-off Reason,0 = Compressor ON\n1 = Compressor OFF: Refrigerant Pressure too High (> 32 bar)\n2 = Compressor OFF: Blower faulty\n3 = Compressor OFF: Refrigerant Pressure too Low (< 2.0 bar)\n5 = Compressor OFF: Engine OFF or NO RPM\n6 = Compressor OFF: ECON Mode OR NO Basic Setting\n7 = Compressor OFF: System deactivated (by Driver) via OFF/0 Switch\n8 = Compressor OFF: Ambient Temperature too Low  (> 3 °C)\n10 = Compressor OFF: Supply Voltage too Low  (> 10.1 V)\n11 = Compressor OFF: Engine Temperature too High (> 118 °C)\n12 = Compressor OFF: Requested by Engine Control Module\n13 = Compressor OFF: Supply Voltage too High (> 17 V)\n14 = Compressor OFF: Evaporator Temperature too Low\n16 = Compressor OFF: Compressor Activation Malfunction\n17 = Compressor OFF: Pressure Sensor Signal implausible\n18 = Compressor OFF: Engine Speed too High at Standstill\n19 = Compressor OFF: Requested by Central Electronics\n20 = Compressor OFF: Refrigerant Loss\n23 = Compressor OFF: Coolant Fan Signal missing
+131,2,Injection Quantity,,Specification (Idle): 3.0...9.0 mg/Str.
+131,4,Coolant,Temperature (G62),Range: -40.5...+135.0 °C\nSpecification (Warm): 75.0...110.0 °C
+;
+133,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+133,2,Intake Air Mass,(actual) (G70),Specification (EGR inactive): 440.0...530.0 mg/Str.\nSpecification (EGR active): 180.0...390.0 mg/Str.\nDifference (EGR active/inactive): 130.0...270.0 mg/Str.
+133,3,Boost Pressure,(actual) (G31),Specification (Idle): 900.0...1150.0 mbar\nSpecification (Full Load): 2000.0...2650.0 mbar
+133,4,? Transmission ?,? Info ?
+;
+134,0,Generator
+134,1,Generator Load,,Specification: 5.0...95.0 %
+134,2,Supply Voltage,(Terminal 30),Range: 0.0...20.0 V\nSpecification: 13.0...15.0 V
+;
+140,1,Injection Quantity,Uniformity ?
+140,3,Data B ?
+140,4,Data B ?
+;
+145,1,El. Mag. Valve,Status Cyl. 5
+;
+194,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+;
+213,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Full Load): 2800...3200 RPM
+213,2,Accel. Pedal Pos.,Sensor (G79),Range: 0.0...100.0 %\nSpecification (Idle): 0.0 %\nSpecification (Full Load): 99.0...100.0 %
+213,3,Vehicle Speed ??,(actual)
+;213,4,?Transmission ?
