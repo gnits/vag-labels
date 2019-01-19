@@ -1,0 +1,16 @@
+;
+; VAG-COM Labelfile
+;
+; VW Touareg (7L)
+;
+; Component: Park Assist (#01) 
+;
+; P/N: 7L0-919-283-F
+;
+; Measuring Blocks 
+;
+; Created on 12/Jan/2019 by Gnits (gnits.car@gmail.com)
+; Last Modified on 12/Jan/2019
+;
+;
+REDIRECT,7M3-919-283.LBL,7L0-919-283-F
