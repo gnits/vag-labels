@@ -39,9 +39,9 @@
 003,4,Exhaust Gas,Recirc. Duty Cycle,Specification (Idle): 15.0...80.0 %\nSpecification (Full Load): 0.0 %
 B003,0,Exhaust Gas Recirculation (EGR)
 B003,1,Engine Speed,(G28),Specification (Idle): 780...820 RPM\nSpecification (Basic Setting): 1450...1550 RPM
-B003,2,Intake Air Mass,(spec.),Specification (Idle): 250.0...350.0 mg/Str.\nSpecification (Full Load): min. 990.0 mg/Str.
+B003,2,EGR Duty Cycle,(specified),Specification (EGR inactive): 0.0 %\nSpecification (EGR active): min. 20.0 %
 B003,3,Intake Air Mass,(actual) (G70),Specification (EGR inactive): 440.0...530.0 mg/Str.\nSpecification (EGR active): 180.0...390.0 mg/Str.\nDifference (EGR active/inactive): 130.0...270.0 mg/Str.
-B003,4,Exhaust Gas,Recirc. Duty Cycle,Specification (EGR inactive): 0.0 %\nSpecification (EGR active): min. 20.0 %
+B003,4,EGR Duty Cycle,(actual),Specification (EGR inactive): 0.0 %\nSpecification (EGR active): min. 20.0 %
 B003,11,Prerequisites: Ignition ON / Engine ON (Running)
 B003,12,After activation of the Basic Setting make sure to not touch the Throttle Pedal!
 B003,13,Exhaust Gas Recirculation (EGR) is alternately switched ON and OFF.
